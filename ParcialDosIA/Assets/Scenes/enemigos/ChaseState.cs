@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChaseState : IuFuncionStates
+public class ChaseState : IuFuncionsStates
 {
     private FSM Fsm;
     private EnemyManager Hunter;
+    
     public ChaseState(FSM _Fsm, EnemyManager _Hunter)
     {
         Fsm = _Fsm;
@@ -23,8 +24,8 @@ public class ChaseState : IuFuncionStates
     public Vector3 Chase()
     {
         Vector3 Desired = Vector3.zero;
-        Agent AgentsKilled = null;
-        foreach (var Bots in GameManager.Instance.FriendBots)
+        PlayerMovement AgentsKilled = null;
+        foreach (var Bots in GameManager.Instance.Player)
         {
             Vector3 DistAllBots = Bots.transform.position - Hunter.transform.position;
             Hunter.CurrentStamine -= 1f * Time.deltaTime;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed;
-
+    private Vector3 _MySpeed;
     Camera _mainCamera;
 
     void Awake()
@@ -32,5 +32,9 @@ public class PlayerMovement : MonoBehaviour
             Debug.DrawLine(cameraRay.origin, pointToLook, Color.blue);
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
+    }
+    public Vector3 GetMySpeed()
+    {
+        return _MySpeed;
     }
 }

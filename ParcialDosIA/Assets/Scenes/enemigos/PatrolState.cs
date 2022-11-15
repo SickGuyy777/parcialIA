@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolState : IuFuncionStates
+public class PatrolState : IuFuncionsStates
 {
     private FSM FiniteStateMachine;
     private EnemyManager Hunter;
-    public PatrolState(FSM _Fsm, Hunter _Hunter)
+    public PatrolState(FSM _Fsm, EnemyManager _Hunter)
     {
         FiniteStateMachine = _Fsm;
         Hunter = _Hunter;
@@ -18,7 +18,7 @@ public class PatrolState : IuFuncionStates
 
     public void OnUpdate()//aca programamos las acciones que queremos hacer mientras esta en este estado y en el caso que tengamos mas estados cambiarlos
     {
-        EnemyManager.MyForce(Patrol());
+        Hunter.MyForce(Patrol());
         if (Hunter.DetectPresa == true)
         {
             FiniteStateMachine.ChangeState(States.Chase);

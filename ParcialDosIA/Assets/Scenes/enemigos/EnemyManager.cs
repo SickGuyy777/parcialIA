@@ -30,11 +30,11 @@ public class EnemyManager : MonoBehaviour
     {
      CurrentStamine = MaxStamine;
      CurrentT = MaxT;
-     StateMachine = new Fsm();
+     StateMachine = new FSM();
      //var Idle = new IdleState(StateMachine, this);//los instanciamos dentro del codigo para que luego lo agreguemos a la maquina de estados que la fsm
      var Patrol = new PatrolState(StateMachine, this);
      var ChaseState = new ChaseState(StateMachine, this);
-     StateMachine.AddStatesInDiccionary(States.Idle, Idle);//agregamos todos los estados que pueda tener
+     //StateMachine.AddStatesInDiccionary(States.Idle, Idle);//agregamos todos los estados que pueda tener
      StateMachine.AddStatesInDiccionary(States.Patrol, Patrol);
      StateMachine.AddStatesInDiccionary(States.Chase, ChaseState);
      StateMachine.ChangeState(States.Idle);//le decimos cual es su estado principal para que inicie

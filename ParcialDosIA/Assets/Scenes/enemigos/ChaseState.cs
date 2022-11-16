@@ -28,14 +28,13 @@ public class ChaseState : IuFuncionsStates
         foreach (var Bots in GameManager.Instance.Player)
         {
             Vector3 DistAllBots = Bots.transform.position - Hunter.transform.position;
-            Hunter.CurrentStamine -= 1f * Time.deltaTime;
             if (DistAllBots.magnitude <= Hunter.VisionRadius)
             {
                 Vector3 ProxPos = Bots.transform.position + Bots.GetMySpeed() * Time.deltaTime;
                 Desired = ProxPos - Hunter.transform.position;
             }
         }
-        if (Desired == Vector3.zero && Hunter.CurrentStamine >= 1 && Hunter.FullStamine==true)
+        if (Desired == Vector3.zero)
         {
             Fsm.ChangeState(States.Patrol);
         }

@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 59468060}
   - component: {fileID: 59468059}
   - component: {fileID: 59468058}
+  - component: {fileID: 59468062}
   m_Layer: 0
   m_Name: Enemy01 (3)
   m_TagString: Untagged
@@ -316,6 +317,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59468062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59468057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594c61c851f29064597b6bbc5de44176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllPatrollPoints: []
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  MaxSpeed: 0
+  MaxForceRot: 0
+  VisionRadius: 5
+  DetectPresa: 0
+  ActualPatrolPoint: 0
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,9 +538,9 @@ GameObject:
   m_Component:
   - component: {fileID: 149417393}
   m_Layer: 0
-  m_Name: NODO (11)
+  m_Name: Nodo Verde
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -546,9 +568,9 @@ GameObject:
   m_Component:
   - component: {fileID: 152015255}
   m_Layer: 0
-  m_Name: NODO (6)
+  m_Name: NODO rojo
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -578,6 +600,7 @@ GameObject:
   - component: {fileID: 157370467}
   - component: {fileID: 157370466}
   - component: {fileID: 157370465}
+  - component: {fileID: 157370469}
   m_Layer: 0
   m_Name: Enemy01
   m_TagString: Untagged
@@ -663,6 +686,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157370469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157370464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594c61c851f29064597b6bbc5de44176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllPatrollPoints: []
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  MaxSpeed: 0
+  MaxForceRot: 0
+  VisionRadius: 5
+  DetectPresa: 0
+  ActualPatrolPoint: 0
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,9 +812,9 @@ GameObject:
   m_Component:
   - component: {fileID: 238768574}
   m_Layer: 0
-  m_Name: NODO (8)
+  m_Name: NODO az
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -828,9 +872,9 @@ GameObject:
   m_Component:
   - component: {fileID: 250738512}
   m_Layer: 0
-  m_Name: NODO (4)
+  m_Name: NODO az y rojo
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -955,6 +999,7 @@ GameObject:
   - component: {fileID: 439691112}
   - component: {fileID: 439691111}
   - component: {fileID: 439691110}
+  - component: {fileID: 439691114}
   m_Layer: 0
   m_Name: Enemy01 (2)
   m_TagString: Untagged
@@ -1040,6 +1085,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439691114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439691109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594c61c851f29064597b6bbc5de44176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllPatrollPoints: []
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  MaxSpeed: 0
+  MaxForceRot: 0
+  VisionRadius: 5
+  DetectPresa: 0
+  ActualPatrolPoint: 0
 --- !u!1 &471003546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1484,7 @@ GameObject:
   - component: {fileID: 598751970}
   - component: {fileID: 598751969}
   - component: {fileID: 598751968}
+  - component: {fileID: 598751972}
   m_Layer: 0
   m_Name: Enemy01 (1)
   m_TagString: Untagged
@@ -1503,6 +1570,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598751972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598751967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594c61c851f29064597b6bbc5de44176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllPatrollPoints: []
+  Player:
+    serializedVersion: 2
+    m_Bits: 8
+  MaxSpeed: 0
+  MaxForceRot: 0
+  VisionRadius: 5
+  DetectPresa: 0
+  ActualPatrolPoint: 0
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,9 +2202,9 @@ GameObject:
   m_Component:
   - component: {fileID: 889030956}
   m_Layer: 0
-  m_Name: NODO (13)
+  m_Name: Nodo Verde
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2174,9 +2262,9 @@ GameObject:
   m_Component:
   - component: {fileID: 923629688}
   m_Layer: 0
-  m_Name: NODO (1)
+  m_Name: NODO am
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2588,9 +2676,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1249049237}
   m_Layer: 0
-  m_Name: NODO (5)
+  m_Name: NODO az y rojo
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2713,9 +2801,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1445777570}
   m_Layer: 0
-  m_Name: NODO (7)
+  m_Name: NODO rojo
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2963,9 +3051,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1619166338}
   m_Layer: 0
-  m_Name: NODO
+  m_Name: NODO AM
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3713,9 +3801,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1977763193}
   m_Layer: 0
-  m_Name: NODO (3)
+  m_Name: NODO az
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3838,9 +3926,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2079613438}
   m_Layer: 0
-  m_Name: NODO (9)
+  m_Name: Nodo Verde
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3868,9 +3956,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2081039238}
   m_Layer: 0
-  m_Name: NODO (12)
+  m_Name: Nodo Verde
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

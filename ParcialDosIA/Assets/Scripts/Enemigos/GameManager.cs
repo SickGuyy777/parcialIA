@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public List<PlayerMovement> Player = new List<PlayerMovement>();
+
+    private Node _startingNode;
+
     private void Awake()
     {
         if (Instance == null)
@@ -17,15 +20,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void SetStartingNode(Node n)
     {
-        
+        _startingNode = n;
     }
+    
+
 }

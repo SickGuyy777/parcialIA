@@ -10,8 +10,8 @@ public class Waypoints : MonoBehaviour
     public float speedRot;
     public float viewRadius;
     public float viewAngle;
-
-    Transform _lastPosPlayer;
+    public PlayerMovement pl;
+    Vector3 _lastPosPlayer;
     bool _notificationSee;
     int _currentWay = 0;
     float _movementSpeed = 8f;
@@ -38,19 +38,17 @@ public class Waypoints : MonoBehaviour
             _notificationSee = true;
             if (_notificationSee == true)
             {
-                _lastPosPlayer = playerPrefab;
+                _lastPosPlayer = pl.transform.position;
             }
-            _lastPosPlayer = playerPrefab;
             if (_Distancia > 0.79)
             {
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerPrefab.position.x, transform.position.y, playerPrefab.position.z), _movementSpeed * Time.deltaTime);
             }
         }
-
         else
         {
             GameObject waypoint = allWaypoints[_currentWay];
-            Vector3 dir = waypoint.transform.position - transform.position;
+            Vector3 dir = waypoint.transform.position - transform.position;//INLOS
             dir.y = 0;
             transform.forward = dir;
             transform.position += transform.forward * _movementSpeed * Time.deltaTime;

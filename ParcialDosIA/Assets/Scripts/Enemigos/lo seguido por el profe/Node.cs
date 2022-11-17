@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    //private List<Node> neighbors = new List<Node>();
-    //private Graph Graphe;
-    //private Vector2Int PosinGraph;//la posicion del 
-    //public List<Node> GiveMeNeighbors()
-    //{
-
-    //}
+    public List<Node> _neighbors = new List<Node>();
+    public int cost = 1;
+    public List<Node> GetNeighbors()
+    {
+        foreach (var item in _neighbors)
+        {
+            _neighbors.Add(item);
+        }
+        return _neighbors;
+    }
+    void SetCost(int c)
+    {
+        cost = Mathf.Clamp(c, 1, 99);
+    }
 }

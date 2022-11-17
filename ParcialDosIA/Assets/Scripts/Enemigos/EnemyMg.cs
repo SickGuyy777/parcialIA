@@ -12,7 +12,8 @@ public class EnemyMg : MonoBehaviour
     private Transform LastPosPlayer;//esto seria la ultima posicion del jugador
     private bool NotificationSee;
     public Transform jugador;
-
+    public Node startingNode;
+    public Node goalNode;
 
     void Start()
     {
@@ -42,6 +43,11 @@ public class EnemyMg : MonoBehaviour
       }
     }
 
+    public void SetStartNode(Node n)
+    {
+        startingNode = n;
+        transform.position = startingNode.transform.position + Vector3.up * 1.5f;
+    }
 
     bool Fov(Vector3 pos)
     {

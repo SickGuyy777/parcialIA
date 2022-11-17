@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 59468062}
   - component: {fileID: 59468063}
   m_Layer: 0
-  m_Name: Enemy01 (3)
+  m_Name: rojo ene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,6 +354,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jugador: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 149417393}
+  - component: {fileID: 149417394}
   m_Layer: 0
   m_Name: Nodo Verde
   m_TagString: Untagged
@@ -574,6 +577,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149417394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149417392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1488613243}
+  - {fileID: 1784869383}
+  cost: 1
 --- !u!1 &152015254
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 152015255}
+  - component: {fileID: 152015256}
   m_Layer: 0
   m_Name: NODO rojo
   m_TagString: Untagged
@@ -604,6 +624,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &152015256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152015254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1224114788}
+  - {fileID: 2127745308}
+  cost: 1
 --- !u!1 &157370464
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +655,7 @@ GameObject:
   - component: {fileID: 157370469}
   - component: {fileID: 157370470}
   m_Layer: 0
-  m_Name: Enemy01
+  m_Name: azul ene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -739,6 +775,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jugador: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238768574}
+  - component: {fileID: 238768575}
   m_Layer: 0
   m_Name: NODO az
   m_TagString: Untagged
@@ -864,6 +903,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &238768575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238768573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1249049238}
+  - {fileID: 912401363}
+  cost: 1
 --- !u!1 &247805188
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247805189}
+  - component: {fileID: 247805190}
   m_Layer: 0
   m_Name: NODO (15)
   m_TagString: Untagged
@@ -894,6 +950,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &247805190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247805188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1603439401}
+  - {fileID: 1445777571}
+  cost: 1
 --- !u!1 &250738511
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 250738512}
+  - component: {fileID: 250738513}
   m_Layer: 0
   m_Name: NODO az y rojo
   m_TagString: Untagged
@@ -924,6 +997,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250738513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250738511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 318797863}
+  - {fileID: 1233725877}
+  - {fileID: 1783629951}
+  cost: 1
 --- !u!1 &318797861
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +1023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 318797862}
+  - component: {fileID: 318797863}
   m_Layer: 0
   m_Name: NODO az y rojo (3)
   m_TagString: Untagged
@@ -954,6 +1045,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318797863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318797861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1859320765}
+  - {fileID: 250738513}
+  - {fileID: 1249049238}
+  cost: 1
 --- !u!1 &329830878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1172,7 @@ GameObject:
   - component: {fileID: 439691114}
   - component: {fileID: 439691115}
   m_Layer: 0
-  m_Name: Enemy01 (2)
+  m_Name: verde ene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1168,6 +1276,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jugador: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
 --- !u!54 &439691115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1565,7 +1675,7 @@ GameObject:
   - component: {fileID: 598751972}
   - component: {fileID: 598751973}
   m_Layer: 0
-  m_Name: Enemy01 (1)
+  m_Name: amarillo ene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1685,6 +1795,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jugador: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,6 +2322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842681774}
+  - component: {fileID: 842681775}
   m_Layer: 0
   m_Name: NODO AM (1)
   m_TagString: Untagged
@@ -2231,6 +2344,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &842681775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842681773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 923629689}
+  - {fileID: 1619166339}
+  cost: 1
 --- !u!1 &880513915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 889030956}
+  - component: {fileID: 889030957}
   m_Layer: 0
   m_Name: Nodo Verde
   m_TagString: Untagged
@@ -2357,6 +2487,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889030957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889030955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 2079613439}
+  - {fileID: 1161496112}
+  cost: 1
 --- !u!1 &901431304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,6 +2512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 901431305}
+  - component: {fileID: 901431306}
   m_Layer: 0
   m_Name: NODO (2)
   m_TagString: Untagged
@@ -2387,6 +2534,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &901431306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901431304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1783629951}
+  - {fileID: 923629689}
+  cost: 1
 --- !u!1 &912401361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,6 +2559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 912401362}
+  - component: {fileID: 912401363}
   m_Layer: 0
   m_Name: NODO az (1)
   m_TagString: Untagged
@@ -2417,6 +2581,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912401363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912401361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 238768575}
+  - {fileID: 1977763194}
+  cost: 1
 --- !u!1 &923629687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,6 +2606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 923629688}
+  - component: {fileID: 923629689}
   m_Layer: 0
   m_Name: NODO am
   m_TagString: Untagged
@@ -2447,6 +2628,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923629689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923629687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 901431306}
+  - {fileID: 842681775}
+  - {fileID: 1619166339}
+  cost: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,6 +2832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079788596}
+  - component: {fileID: 1079788597}
   m_Layer: 0
   m_Name: nodo verde
   m_TagString: Untagged
@@ -2655,6 +2854,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079788597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079788595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1488613243}
+  - {fileID: 2079613439}
+  cost: 1
 --- !u!1 &1095521167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1161496111}
+  - component: {fileID: 1161496112}
   m_Layer: 0
   m_Name: Nodo Verde (1)
   m_TagString: Untagged
@@ -2780,6 +2996,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161496112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161496110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 2081039239}
+  - {fileID: 889030957}
+  cost: 1
 --- !u!1 &1194530013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +3102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224114787}
+  - component: {fileID: 1224114788}
   m_Layer: 0
   m_Name: NODO rojo (1)
   m_TagString: Untagged
@@ -2891,6 +3124,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224114788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224114786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1445777571}
+  - {fileID: 152015256}
+  cost: 1
 --- !u!1 &1233725875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,6 +3149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233725876}
+  - component: {fileID: 1233725877}
   m_Layer: 0
   m_Name: NODO az y rojo (1)
   m_TagString: Untagged
@@ -2921,6 +3171,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233725877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233725875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1859320765}
+  - {fileID: 250738513}
+  - {fileID: 1445777571}
+  cost: 1
 --- !u!1 &1249049236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2930,6 +3197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1249049237}
+  - component: {fileID: 1249049238}
   m_Layer: 0
   m_Name: NODO az y rojo
   m_TagString: Untagged
@@ -2951,6 +3219,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249049238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249049236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 318797863}
+  - {fileID: 2127745308}
+  - {fileID: 238768575}
+  cost: 1
 --- !u!1 &1416185324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1445777570}
+  - component: {fileID: 1445777571}
   m_Layer: 0
   m_Name: NODO rojo
   m_TagString: Untagged
@@ -3076,6 +3362,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445777571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445777569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1224114788}
+  - {fileID: 1233725877}
+  - {fileID: 247805190}
+  cost: 1
 --- !u!1 &1485607723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3180,6 +3483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1488613242}
+  - component: {fileID: 1488613243}
   m_Layer: 0
   m_Name: Nodo Verde (3)
   m_TagString: Untagged
@@ -3201,6 +3505,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488613243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488613241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1079788597}
+  - {fileID: 149417394}
+  cost: 1
 --- !u!1 &1603439399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,6 +3530,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603439400}
+  - component: {fileID: 1603439401}
   m_Layer: 0
   m_Name: NODO (14)
   m_TagString: Untagged
@@ -3231,6 +3552,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603439401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603439399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 2079613439}
+  - {fileID: 247805190}
+  cost: 1
 --- !u!1 &1619166337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,6 +3577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1619166338}
+  - component: {fileID: 1619166339}
   m_Layer: 0
   m_Name: NODO AM
   m_TagString: Untagged
@@ -3260,6 +3598,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 715379395}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619166339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619166337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 842681775}
+  cost: 1
+--- !u!1 &1639065042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639065044}
+  - component: {fileID: 1639065043}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1639065043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954e9f3a234ad0a4eaa7de002a19960f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyFriends:
+  - {fileID: 59468063}
+  - {fileID: 157370470}
+  - {fileID: 598751973}
+  - {fileID: 439691114}
+  Enemies: {fileID: 439691114}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!4 &1639065044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673378733
 GameObject:
@@ -3651,6 +4056,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1783629950}
+  - component: {fileID: 1783629951}
   m_Layer: 0
   m_Name: NODO az (2)
   m_TagString: Untagged
@@ -3672,6 +4078,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783629951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783629949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1977763194}
+  - {fileID: 901431306}
+  - {fileID: 250738513}
+  cost: 1
 --- !u!1 &1784869381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,6 +4104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784869382}
+  - component: {fileID: 1784869383}
   m_Layer: 0
   m_Name: Nodo Verde (2)
   m_TagString: Untagged
@@ -3702,6 +4126,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784869383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784869381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 149417394}
+  - {fileID: 2081039239}
+  cost: 1
 --- !u!1 &1790900421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,6 +4374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1859320764}
+  - component: {fileID: 1859320765}
   m_Layer: 0
   m_Name: NODO az y rojo (4)
   m_TagString: Untagged
@@ -3955,6 +4396,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1859320765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859320763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 2127745308}
+  - {fileID: 318797863}
+  - {fileID: 1233725877}
+  cost: 1
 --- !u!1 &1950183609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1977763193}
+  - component: {fileID: 1977763194}
   m_Layer: 0
   m_Name: NODO az
   m_TagString: Untagged
@@ -4117,6 +4576,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1977763194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977763192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 912401363}
+  - {fileID: 1783629951}
+  cost: 1
 --- !u!1 &1994709619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079613438}
+  - component: {fileID: 2079613439}
   m_Layer: 0
   m_Name: Nodo Verde
   m_TagString: Untagged
@@ -4242,6 +4718,23 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079613439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079613437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 889030957}
+  - {fileID: 1079788597}
+  - {fileID: 1603439401}
+  cost: 1
 --- !u!1 &2081039237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,6 +4744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2081039238}
+  - component: {fileID: 2081039239}
   m_Layer: 0
   m_Name: Nodo Verde
   m_TagString: Untagged
@@ -4272,6 +4766,22 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081039239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081039237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 1784869383}
+  - {fileID: 1161496112}
+  cost: 1
 --- !u!1 &2127745306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,6 +4791,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127745307}
+  - component: {fileID: 2127745308}
   m_Layer: 0
   m_Name: NODO az y rojo (2)
   m_TagString: Untagged
@@ -4302,3 +4813,20 @@ Transform:
   m_Father: {fileID: 715379395}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2127745308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127745306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _neighbors:
+  - {fileID: 152015256}
+  - {fileID: 1859320765}
+  - {fileID: 1249049238}
+  cost: 1

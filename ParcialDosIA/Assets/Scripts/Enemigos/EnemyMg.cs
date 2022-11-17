@@ -9,30 +9,37 @@ public class EnemyMg : MonoBehaviour
     public float speedRot;
     public float speed;
     public LayerMask WallMask;
+    private Transform LastPosPlayer;//esto seria la ultima posicion del jugador
+    private bool NotificationSee;
     public Transform jugador;
-    public GameObject Player;
+
+
     void Start()
     {
 
-        //var dir = jugador.position - transform.position;
-        //var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
-        //transform.forward = lerpDir;
-        //var _Distancia = Vector3.Distance(jugador.position, transform.position);
-        //if (_Distancia > 0.79)
-        //{
-        //    transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), speed * Time.deltaTime);
-        //} 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-            if (Fov(Player.transform.position))
-            {
-                
-            }
-        
+      if (Fov(jugador.transform.position))
+      {
+       var dir = jugador.position - transform.position;
+       var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+       transform.forward = lerpDir;
+       var _Distancia = Vector3.Distance(jugador.position, transform.position);
+       NotificationSee = true;
+       if(NotificationSee==true)
+       {
+        LastPosPlayer = jugador;
+       }
+       LastPosPlayer = jugador;
+       if (_Distancia > 0.79)
+       {
+         transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), speed * Time.deltaTime);
+       }
+      }
     }
 
 

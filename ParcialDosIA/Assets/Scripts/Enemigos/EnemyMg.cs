@@ -17,30 +17,12 @@ public class EnemyMg : MonoBehaviour
 
     void Start()
     {
-
-
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
-      if (Fov(jugador.transform.position))
-      {
-       var dir = jugador.position - transform.position;
-       var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
-       transform.forward = lerpDir;
-       var _Distancia = Vector3.Distance(jugador.position, transform.position);
-       NotificationSee = true;
-       if(NotificationSee==true)
-       {
-        LastPosPlayer = jugador;
-       }
-       LastPosPlayer = jugador;
-       if (_Distancia > 0.79)
-       {
-         transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), speed * Time.deltaTime);
-       }
-      }
+        FOV();
     }
 
     public void SetStartNode(Node n)
@@ -71,5 +53,26 @@ public class EnemyMg : MonoBehaviour
     private Vector3 GetVectorForAngle(float Angle)
     {
         return new Vector3(Mathf.Sin(Angle * Mathf.Deg2Rad), 0, Mathf.Cos(Angle * Mathf.Deg2Rad));
+    }
+
+    public void FOV()
+    {
+        if (Fov(jugador.transform.position))
+        {
+            var dir = jugador.position - transform.position;
+            var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+            transform.forward = lerpDir;
+            var _Distancia = Vector3.Distance(jugador.position, transform.position);
+            NotificationSee = true;
+            if (NotificationSee == true)
+            {
+                LastPosPlayer = jugador;
+            }
+            LastPosPlayer = jugador;
+            if (_Distancia > 0.79)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), speed * Time.deltaTime);
+            }
+        }
     }
 }

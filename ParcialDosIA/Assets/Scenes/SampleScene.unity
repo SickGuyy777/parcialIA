@@ -231,7 +231,6 @@ GameObject:
   - component: {fileID: 59468060}
   - component: {fileID: 59468059}
   - component: {fileID: 59468058}
-  - component: {fileID: 59468063}
   - component: {fileID: 59468062}
   m_Layer: 0
   m_Name: rojo ene
@@ -339,31 +338,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
---- !u!114 &59468063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59468057}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042ad8d1a1e57044ea1ab2e1014b3cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ViewRadius: 8.22
-  ViewAngle: 50
-  speedRot: 2
-  speed: 1.5
-  WallMask:
-    serializedVersion: 2
-    m_Bits: 64
-  jugador: {fileID: 1790900425}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
+  pl: {fileID: 1790900426}
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +581,7 @@ MonoBehaviour:
   - {fileID: 1488613243}
   - {fileID: 1784869383}
   cost: 1
+  _coste: 0
 --- !u!1 &152015254
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +629,7 @@ MonoBehaviour:
   - {fileID: 1224114788}
   - {fileID: 2127745308}
   cost: 1
+  _coste: 0
 --- !u!1 &157370464
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +642,6 @@ GameObject:
   - component: {fileID: 157370467}
   - component: {fileID: 157370466}
   - component: {fileID: 157370465}
-  - component: {fileID: 157370470}
   - component: {fileID: 157370469}
   m_Layer: 0
   m_Name: azul ene
@@ -768,31 +749,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
---- !u!114 &157370470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157370464}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042ad8d1a1e57044ea1ab2e1014b3cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ViewRadius: 8.22
-  ViewAngle: 50
-  speedRot: 2
-  speed: 1.5
-  WallMask:
-    serializedVersion: 2
-    m_Bits: 64
-  jugador: {fileID: 1790900425}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
+  pl: {fileID: 1790900426}
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +897,7 @@ MonoBehaviour:
   - {fileID: 1249049238}
   - {fileID: 912401363}
   cost: 1
+  _coste: 0
 --- !u!1 &247805188
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +945,7 @@ MonoBehaviour:
   - {fileID: 1603439401}
   - {fileID: 1445777571}
   cost: 1
+  _coste: 0
 --- !u!1 &250738511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +994,7 @@ MonoBehaviour:
   - {fileID: 1233725877}
   - {fileID: 1783629951}
   cost: 1
+  _coste: 0
 --- !u!1 &318797861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1043,7 @@ MonoBehaviour:
   - {fileID: 250738513}
   - {fileID: 1249049238}
   cost: 1
+  _coste: 0
 --- !u!1 &329830878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1151,6 @@ GameObject:
   - component: {fileID: 439691112}
   - component: {fileID: 439691111}
   - component: {fileID: 439691110}
-  - component: {fileID: 439691114}
   - component: {fileID: 439691116}
   m_Layer: 0
   m_Name: verde ene
@@ -1272,28 +1237,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &439691114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439691109}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042ad8d1a1e57044ea1ab2e1014b3cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ViewRadius: 8.22
-  ViewAngle: 50
-  speedRot: 2
-  speed: 1.5
-  WallMask:
-    serializedVersion: 2
-    m_Bits: 64
-  jugador: {fileID: 1790900425}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
 --- !u!114 &439691116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,9 +1259,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
   speedRot: 9.09
   viewRadius: 13.69
   viewAngle: 90
+  pl: {fileID: 1790900426}
 --- !u!1 &471003546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,7 +1643,6 @@ GameObject:
   - component: {fileID: 598751970}
   - component: {fileID: 598751969}
   - component: {fileID: 598751968}
-  - component: {fileID: 598751973}
   - component: {fileID: 598751972}
   m_Layer: 0
   m_Name: amarillo ene
@@ -1798,36 +1743,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allWaypoints:
   - {fileID: 1619166337}
+  - {fileID: 842681773}
   - {fileID: 923629687}
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
---- !u!114 &598751973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598751967}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 042ad8d1a1e57044ea1ab2e1014b3cca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ViewRadius: 8.22
-  ViewAngle: 50
-  speedRot: 2
-  speed: 1.5
-  WallMask:
-    serializedVersion: 2
-    m_Bits: 64
-  jugador: {fileID: 1790900425}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
+  pl: {fileID: 1790900426}
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,6 +2318,7 @@ MonoBehaviour:
   - {fileID: 923629689}
   - {fileID: 1619166339}
   cost: 1
+  _coste: 0
 --- !u!1 &880513915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,6 +2462,7 @@ MonoBehaviour:
   - {fileID: 2079613439}
   - {fileID: 1161496112}
   cost: 1
+  _coste: 0
 --- !u!1 &901431304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,6 +2510,7 @@ MonoBehaviour:
   - {fileID: 1783629951}
   - {fileID: 923629689}
   cost: 1
+  _coste: 0
 --- !u!1 &912401361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +2558,7 @@ MonoBehaviour:
   - {fileID: 238768575}
   - {fileID: 1977763194}
   cost: 1
+  _coste: 0
 --- !u!1 &923629687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,6 +2607,7 @@ MonoBehaviour:
   - {fileID: 842681775}
   - {fileID: 1619166339}
   cost: 1
+  _coste: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,6 +2833,7 @@ MonoBehaviour:
   - {fileID: 1488613243}
   - {fileID: 2079613439}
   cost: 1
+  _coste: 0
 --- !u!1 &1095521167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +2976,7 @@ MonoBehaviour:
   - {fileID: 2081039239}
   - {fileID: 889030957}
   cost: 1
+  _coste: 0
 --- !u!1 &1194530013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,6 +3105,7 @@ MonoBehaviour:
   - {fileID: 1445777571}
   - {fileID: 152015256}
   cost: 1
+  _coste: 0
 --- !u!1 &1233725875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,6 +3154,7 @@ MonoBehaviour:
   - {fileID: 250738513}
   - {fileID: 1445777571}
   cost: 1
+  _coste: 0
 --- !u!1 &1249049236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,6 +3203,7 @@ MonoBehaviour:
   - {fileID: 2127745308}
   - {fileID: 238768575}
   cost: 1
+  _coste: 0
 --- !u!1 &1416185324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,6 +3347,7 @@ MonoBehaviour:
   - {fileID: 1233725877}
   - {fileID: 247805190}
   cost: 1
+  _coste: 0
 --- !u!1 &1485607723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,6 +3490,7 @@ MonoBehaviour:
   - {fileID: 1079788597}
   - {fileID: 149417394}
   cost: 1
+  _coste: 0
 --- !u!1 &1603439399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3599,6 +3538,7 @@ MonoBehaviour:
   - {fileID: 2079613439}
   - {fileID: 247805190}
   cost: 1
+  _coste: 0
 --- !u!1 &1619166337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,6 +3585,7 @@ MonoBehaviour:
   _neighbors:
   - {fileID: 842681775}
   cost: 1
+  _coste: 0
 --- !u!1 &1639065042
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,6 +4045,7 @@ MonoBehaviour:
   - {fileID: 901431306}
   - {fileID: 250738513}
   cost: 1
+  _coste: 0
 --- !u!1 &1784869381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4151,6 +4093,7 @@ MonoBehaviour:
   - {fileID: 149417394}
   - {fileID: 2081039239}
   cost: 1
+  _coste: 0
 --- !u!1 &1790900421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,6 +4365,7 @@ MonoBehaviour:
   - {fileID: 318797863}
   - {fileID: 1233725877}
   cost: 1
+  _coste: 0
 --- !u!1 &1950183609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,6 +4545,7 @@ MonoBehaviour:
   - {fileID: 912401363}
   - {fileID: 1783629951}
   cost: 1
+  _coste: 0
 --- !u!1 &1994709619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,6 +4689,7 @@ MonoBehaviour:
   - {fileID: 1079788597}
   - {fileID: 1603439401}
   cost: 1
+  _coste: 0
 --- !u!1 &2081039237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4791,6 +4737,7 @@ MonoBehaviour:
   - {fileID: 1784869383}
   - {fileID: 1161496112}
   cost: 1
+  _coste: 0
 --- !u!1 &2127745306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,3 +4786,4 @@ MonoBehaviour:
   - {fileID: 1859320765}
   - {fileID: 1249049238}
   cost: 1
+  _coste: 0

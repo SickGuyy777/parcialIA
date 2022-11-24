@@ -5,11 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public List<EnemyMg> MyFriends = new List<EnemyMg>();
+    //public List<EnemyMg> MyFriends = new List<EnemyMg>();
     private PathFinding _pf = new PathFinding();
     private Node _startingNode;
     private Node _goalNode;
-    public EnemyMg Enemies;
+    public Waypoints Enemies;
     public LayerMask wallLayer;
 
     private void Awake()

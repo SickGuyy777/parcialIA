@@ -7,6 +7,8 @@ public class Waypoints : MonoBehaviour
     public GameObject[] allWaypoints;
     public LayerMask wallLayer;
     public Transform playerPrefab;
+    public Node startingNode;
+    public Node goalNode;
     public float speedRot;
     public float viewRadius;
     public float viewAngle;
@@ -21,11 +23,11 @@ public class Waypoints : MonoBehaviour
         Movement();
     }
 
-    //bool InLOS(Vector3 start, Vector3 end)
-    //{
-    //    Vector3 dir = end - start;
-    //    return !Physics.Raycast(start, dir, dir.magnitude, wallLayer);
-    //}
+    public void SetStartNode(Node n)
+    {
+        startingNode = n;
+        transform.position = startingNode.transform.position + Vector3.up * 1.5f;
+    }
 
     public void Movement()
     {

@@ -75,6 +75,7 @@ public class PathFinding
         }
         return new List<Node>();
     }
+
     public List<Node> GreedyBFS(Node startingNode, Node goalNode)
     {
         if (startingNode == null || goalNode == null) return new List<Node>();

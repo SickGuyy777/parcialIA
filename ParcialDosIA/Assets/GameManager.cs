@@ -5,11 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    //public List<EnemyMg> MyFriends = new List<EnemyMg>();
-    private PathFinding _pf = new PathFinding();
-    private Node _startingNode;
-    private Node _goalNode;
-    public Waypoints Enemies;
+    public List<Waypoints> Hunters = new List<Waypoints>();
     public LayerMask wallLayer;
 
     private void Awake()
@@ -24,16 +20,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetStartingNode(Node n)
+    public void AddHuntter(Waypoints Hunt)
     {
-        _startingNode = n;
-        if (Enemies) Enemies.SetStartNode(n);
-    }
-
-    public void SetGoalNode(Node node)
-    {
-        _goalNode = node;
-        if (Enemies) Enemies.goalNode = node;
+        if (!Hunters.Contains(Hunt))
+        {
+            Hunters.Add(Hunt);
+        }
     }
 
 }

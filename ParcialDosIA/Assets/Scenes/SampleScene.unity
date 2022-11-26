@@ -334,16 +334,16 @@ MonoBehaviour:
   - {fileID: 152015254}
   - {fileID: 2127745306}
   - {fileID: 1233725875}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
-  pl: {fileID: 1790900426}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,16 +745,16 @@ MonoBehaviour:
   - {fileID: 1977763192}
   - {fileID: 250738511}
   - {fileID: 1249049236}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
-  pl: {fileID: 1790900426}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,16 +1255,16 @@ MonoBehaviour:
   - {fileID: 2081039237}
   - {fileID: 149417392}
   - {fileID: 1079788595}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
   speedRot: 9.09
   viewRadius: 13.69
   viewAngle: 90
-  pl: {fileID: 1790900426}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &471003546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,16 +1745,16 @@ MonoBehaviour:
   - {fileID: 1619166337}
   - {fileID: 842681773}
   - {fileID: 923629687}
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
   playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
   speedRot: 9
   viewRadius: 14
   viewAngle: 90
-  pl: {fileID: 1790900426}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,6 +3595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639065044}
+  - component: {fileID: 1639065043}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3602,6 +3603,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1639065043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639065042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954e9f3a234ad0a4eaa7de002a19960f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemies: {fileID: 439691116}
+  Hunters: []
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &1639065044
 Transform:
   m_ObjectHideFlags: 0

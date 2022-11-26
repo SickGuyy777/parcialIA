@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Waypoints : MonoBehaviour
-{
+{   
     public GameObject[] allWaypoints;
-    public LayerMask wallLayer;
     public Transform playerPrefab;
+    public PlayerMovement pl;
     public Node startingNode;
     public Node goalNode;
+    List<Node> FollowWay=new List<Node>();
+    PathFinding _Pathf = new PathFinding();
     public float speedRot;
     public float viewRadius;
     public float viewAngle;
-    public PlayerMovement pl;
-    Vector3 _lastPosPlayer;
-    bool _notificationSee;
     int _currentWay = 0;
-    float _movementSpeed = 8f;
+    public float _movementSpeed;
+    private bool Notify = false;
+    Vector3 _lastPosPlayer;
+    public LayerMask wallLayer;
 
+    private void Start()
+    {
+        GameManager.Instance.AddHuntter(this);
+    }
     private void Update()
     {
         Movement();
-    }
-
-    public void SetStartNode(Node n)
-    {
-        startingNode = n;
-        transform.position = startingNode.transform.position + Vector3.up * 1.5f;
     }
 
     public void Movement()
@@ -37,10 +37,20 @@ public class Waypoints : MonoBehaviour
             var lerpDir = Vector3.Lerp(transform.forward, dire, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
             var _Distancia = Vector3.Distance(playerPrefab.position, transform.position);
-            _notificationSee = true;
-            if (_notificationSee == true)
+            Notify = true;
+            if(Notify==true)
             {
-                _lastPosPlayer = pl.transform.position;
+                foreach (Waypoints Hunters in GameManager.Instance.Hunters)
+                {
+                    if (Hunters == this)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        FollowWay = _Pathf.BFS(startingNode, goalNode);
+                    }
+                }
             }
             if (_Distancia > 0.79)
             {
@@ -49,8 +59,9 @@ public class Waypoints : MonoBehaviour
         }
         else
         {
+            FollowWay = _Pathf.BFS(startingNode, goalNode);
             GameObject waypoint = allWaypoints[_currentWay];
-            Vector3 dir = waypoint.transform.position - transform.position;//INLOS
+            Vector3 dir = waypoint.transform.position - transform.position;
             dir.y = 0;
             transform.forward = dir;
             transform.position += transform.forward * _movementSpeed * Time.deltaTime;
@@ -63,7 +74,20 @@ public class Waypoints : MonoBehaviour
                     _currentWay = 0;
                 }
             }
+            
         }
+    }
+    void FollouPath()
+    {
+        if (FollowWay.Count == 0) return;
+
+        Vector3 nextPos = FollowWay[0].transform.position + Vector3.up * 1.5f;
+        Vector3 dir = nextPos - transform.position;
+        transform.forward = dir;
+        transform.position += transform.forward * Time.deltaTime * _movementSpeed;
+
+        if (dir.magnitude < 0.1f)
+            FollowWay.RemoveAt(0);
     }
 
     private void OnDrawGizmos()

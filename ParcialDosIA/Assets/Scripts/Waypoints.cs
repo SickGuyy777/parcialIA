@@ -17,6 +17,7 @@ public class Waypoints : MonoBehaviour
     List<Node> FollowWay = new List<Node>();
     PathFinding _Pathf = new PathFinding();
     public Fsm StateMachine;
+    public float MaxSpeed;
     public float viewRadius;
     public float viewAngle;
     public int _currentWay = 0;
@@ -48,25 +49,21 @@ public class Waypoints : MonoBehaviour
     {
         return _MySpeed;
     }
-
-    public void Movement()
-    {
             //esto tiene que hacerce una vez a lo mejor con una corrutina en patrol y creo que chase
             //FollowWay = _Pathf.AStar(startingNode, goalNode);
             //if (FollowWay.Count != 0)
             //{
             //    FollowPath();
             //}
-    }
 
     public Vector3 SteeringCalculate(Vector3 desired)
     {
-        return Vector3.ClampMagnitude((desired.normalized * _movementSpeed) - _MySpeed, MaxForceRot);
+        return Vector3.ClampMagnitude((desired.normalized * MaxSpeed) - _MySpeed, MaxForceRot);
     }
 
     public void MyForce(Vector3 force)
     {
-        _MySpeed = Vector3.ClampMagnitude(_MySpeed + force, _movementSpeed);
+        _MySpeed = Vector3.ClampMagnitude(_MySpeed + force, MaxSpeed);
     }
 
     public void FollowPath()

@@ -27,13 +27,7 @@ public class ChaseState :IuFuntions
 
     public void OnUpdate()
     {
-        //enemyAgent.MyForce(Chase());
-        //if (!enemyAgent.Fov(enemyAgent.playerPrefab.transform.position))
-        //{
-        //    _Fsm.ChangeState(States.Patrol);
-        //}
-
-        Chase();
+        enemyAgent.MyForce(Chase());
         if (!enemyAgent.Fov(enemyAgent.playerPrefab.transform.position))
         {
             _Fsm.ChangeState(States.Patrol);
@@ -44,12 +38,14 @@ public class ChaseState :IuFuntions
         Vector3 desired = Vector3.zero;
         foreach (var player in GameManager.Instance.Player)
         {
-            Vector3 dir = enemyAgent.transform.position - player.transform.position;
+            Vector3 dir = player.transform.position - enemyAgent.transform.position;
             if (dir.magnitude <= enemyAgent.viewAngle)
             {
-                enemyAgent.transform.forward = dir;
-                enemyAgent.transform.position -= dir.normalized * enemyAgent._movementSpeed * Time.deltaTime;
-                desired = dir;
+                //enemyAgent.transform.forward = dir;
+                //enemyAgent.transform.position -= dir.normalized * enemyAgent._movementSpeed * Time.deltaTime;
+                //desired = dir;
+                Vector3 ProxPos = player.transform.position + player.GetMySpeed() * Time.deltaTime;
+                desired = ProxPos - enemyAgent.transform.position;
             }
         }
 

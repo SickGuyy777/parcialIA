@@ -329,11 +329,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWaypoints: []
+  allWaypoints:
+  - {fileID: 1445777569}
+  - {fileID: 1224114786}
+  - {fileID: 152015254}
+  - {fileID: 2127745306}
+  - {fileID: 1859320763}
+  - {fileID: 1233725875}
   playerPrefab: {fileID: 1790900425}
   pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
+  MaxSpeed: 2.34
   viewRadius: 10
   viewAngle: 75
   _currentWay: 0
@@ -738,11 +745,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWaypoints: []
+  allWaypoints:
+  - {fileID: 238768573}
+  - {fileID: 912401361}
+  - {fileID: 1977763192}
+  - {fileID: 1783629949}
+  - {fileID: 250738511}
+  - {fileID: 318797861}
+  - {fileID: 1249049236}
   playerPrefab: {fileID: 1790900425}
   pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
+  MaxSpeed: 2.34
   viewRadius: 10
   viewAngle: 75
   _currentWay: 0
@@ -1223,14 +1238,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439691109}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -38.2, y: 2.01, z: -10.6}
   m_LocalScale: {x: 2.040271, y: 2.040271, z: 2.040271}
   m_Children:
   - {fileID: 545223231}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &439691116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,6 +1268,7 @@ MonoBehaviour:
   pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
+  MaxSpeed: 2.34
   viewRadius: 10
   viewAngle: 75
   _currentWay: 0
@@ -1739,11 +1755,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allWaypoints: []
+  allWaypoints:
+  - {fileID: 1619166337}
+  - {fileID: 842681773}
+  - {fileID: 923629687}
   playerPrefab: {fileID: 1790900425}
   pl: {fileID: 1790900426}
   startingNode: {fileID: 0}
   goalNode: {fileID: 0}
+  MaxSpeed: 2.34
   viewRadius: 10
   viewAngle: 75
   _currentWay: 0
@@ -2092,7 +2112,7 @@ Transform:
   - {fileID: 1784869382}
   - {fileID: 1488613242}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719238908
 GameObject:
@@ -4501,7 +4521,7 @@ Transform:
   - {fileID: 329830879}
   - {fileID: 880513919}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1977763192
 GameObject:

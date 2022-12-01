@@ -329,6 +329,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allWaypoints: []
+  playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
+  viewRadius: 10
+  viewAngle: 75
+  _currentWay: 0
+  _movementSpeed: 4
+  Notify: 0
+  MaxForceRot: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +738,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allWaypoints: []
+  playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
+  viewRadius: 10
+  viewAngle: 75
+  _currentWay: 0
+  _movementSpeed: 4
+  Notify: 0
+  MaxForceRot: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1243,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allWaypoints:
+  - {fileID: 2079613437}
+  - {fileID: 889030955}
+  - {fileID: 2081039237}
+  - {fileID: 149417392}
+  - {fileID: 1079788595}
+  playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
+  viewRadius: 10
+  viewAngle: 75
+  _currentWay: 0
+  _movementSpeed: 4
+  Notify: 0
+  MaxForceRot: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &471003546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1739,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allWaypoints: []
+  playerPrefab: {fileID: 1790900425}
+  pl: {fileID: 1790900426}
+  startingNode: {fileID: 0}
+  goalNode: {fileID: 0}
+  viewRadius: 10
+  viewAngle: 75
+  _currentWay: 0
+  _movementSpeed: 4
+  Notify: 0
+  MaxForceRot: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3535,7 +3600,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954e9f3a234ad0a4eaa7de002a19960f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hunters: []
+  Hunters:
+  - {fileID: 157370469}
+  - {fileID: 598751972}
+  - {fileID: 439691116}
+  - {fileID: 59468062}
+  Player:
+  - {fileID: 1790900426}
   wallLayer:
     serializedVersion: 2
     m_Bits: 0

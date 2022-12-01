@@ -59,9 +59,9 @@ public class Waypoints : MonoBehaviour
             //}
     }
 
-    public Vector3 SteeringCalculate(Vector3 Desired)
+    public Vector3 SteeringCalculate(Vector3 desired)
     {
-        return Vector3.ClampMagnitude((Desired.normalized * _movementSpeed) - _MySpeed, MaxForceRot);
+        return Vector3.ClampMagnitude((desired.normalized * _movementSpeed) - _MySpeed, MaxForceRot);
     }
 
     public void MyForce(Vector3 force)

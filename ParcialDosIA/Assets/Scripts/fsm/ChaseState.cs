@@ -82,4 +82,23 @@ public class ChaseState :IuFuntions
     {
 
     }
+    public void CalculatewayMap()
+    {
+
+        Physics.CheckSphere(enemyAgent.transform.position, enemyAgent.viewRadius, enemyAgent.wallLayer);
+        //foreach (var item in _Nodes)
+        //{
+        //    if (Vector3.Angle(item.transform.position = transform.position, transform.forward) - 60)
+        //    {
+        //        enemyAgent.followway = enemyAgent._pathf.astar(startingnode, goalnode);
+        //        if (followway.count != 0)
+        //        {
+        //            followpath();
+        //        }
+        //    }
+        //}
+
+
+
+    }
 }

@@ -25,6 +25,7 @@ public class Waypoints : MonoBehaviour
     public bool Notify = false;
     public float MaxForceRot;
     public LayerMask wallLayer;
+    public LayerMask SeeNodes;
     public Vector3 Player;
     private Vector3 _MySpeed;
 
@@ -101,5 +102,8 @@ public class Waypoints : MonoBehaviour
         if (dir.magnitude > viewRadius) return false;
         if (Physics.Raycast(transform.position, dir, dir.magnitude, wallLayer)) return false;
         return Vector3.Angle(transform.forward, dir) <= (viewAngle / 2);
+        
     }
+
+    
 }

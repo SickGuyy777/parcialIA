@@ -231,7 +231,6 @@ GameObject:
   - component: {fileID: 59468060}
   - component: {fileID: 59468059}
   - component: {fileID: 59468058}
-  - component: {fileID: 59468062}
   m_Layer: 0
   m_Name: rojo ene
   m_TagString: Untagged
@@ -317,40 +316,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &59468062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59468057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allWaypoints:
-  - {fileID: 1445777569}
-  - {fileID: 1224114786}
-  - {fileID: 152015254}
-  - {fileID: 2127745306}
-  - {fileID: 1859320763}
-  - {fileID: 1233725875}
-  playerPrefab: {fileID: 1790900425}
-  pl: {fileID: 1790900426}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
-  MaxSpeed: 2.34
-  viewRadius: 10
-  viewAngle: 75
-  _currentWay: 0
-  _movementSpeed: 4
-  Notify: 0
-  MaxForceRot: 5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &86827738
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +518,7 @@ GameObject:
   - component: {fileID: 149417394}
   m_Layer: 0
   m_Name: Nodo Verde
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -581,13 +546,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 149417392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1488613243}
-  - {fileID: 1784869383}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &152015254
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +563,7 @@ GameObject:
   - component: {fileID: 152015256}
   m_Layer: 0
   m_Name: NODO rojo
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -628,13 +591,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 152015254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1224114788}
-  - {fileID: 2127745308}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &157370464
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +608,6 @@ GameObject:
   - component: {fileID: 157370467}
   - component: {fileID: 157370466}
   - component: {fileID: 157370465}
-  - component: {fileID: 157370469}
   m_Layer: 0
   m_Name: azul ene
   m_TagString: Untagged
@@ -733,41 +693,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &157370469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157370464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allWaypoints:
-  - {fileID: 238768573}
-  - {fileID: 912401361}
-  - {fileID: 1977763192}
-  - {fileID: 1783629949}
-  - {fileID: 250738511}
-  - {fileID: 318797861}
-  - {fileID: 1249049236}
-  playerPrefab: {fileID: 1790900425}
-  pl: {fileID: 1790900426}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
-  MaxSpeed: 2.34
-  viewRadius: 10
-  viewAngle: 75
-  _currentWay: 0
-  _movementSpeed: 4
-  Notify: 0
-  MaxForceRot: 5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &186423685
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +800,7 @@ GameObject:
   - component: {fileID: 238768575}
   m_Layer: 0
   m_Name: NODO az
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,13 +828,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 238768573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1249049238}
-  - {fileID: 912401363}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &247805188
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +845,7 @@ GameObject:
   - component: {fileID: 247805190}
   m_Layer: 0
   m_Name: NODO (15)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,13 +873,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 247805188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1603439401}
-  - {fileID: 1445777571}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &250738511
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +890,7 @@ GameObject:
   - component: {fileID: 250738513}
   m_Layer: 0
   m_Name: NODO az y rojo
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,14 +918,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 250738511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 318797863}
-  - {fileID: 1233725877}
-  - {fileID: 1783629951}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &318797861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +935,7 @@ GameObject:
   - component: {fileID: 318797863}
   m_Layer: 0
   m_Name: NODO az y rojo (3)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,14 +963,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 318797861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1859320765}
-  - {fileID: 250738513}
-  - {fileID: 1249049238}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &329830878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1075,6 @@ GameObject:
   - component: {fileID: 439691112}
   - component: {fileID: 439691111}
   - component: {fileID: 439691110}
-  - component: {fileID: 439691116}
   m_Layer: 0
   m_Name: verde ene
   m_TagString: Untagged
@@ -1246,39 +1160,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &439691116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439691109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allWaypoints:
-  - {fileID: 2079613437}
-  - {fileID: 889030955}
-  - {fileID: 2081039237}
-  - {fileID: 149417392}
-  - {fileID: 1079788595}
-  playerPrefab: {fileID: 1790900425}
-  pl: {fileID: 1790900426}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
-  MaxSpeed: 2.34
-  viewRadius: 10
-  viewAngle: 75
-  _currentWay: 0
-  _movementSpeed: 4
-  Notify: 0
-  MaxForceRot: 5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &471003546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1538,6 @@ GameObject:
   - component: {fileID: 598751970}
   - component: {fileID: 598751969}
   - component: {fileID: 598751968}
-  - component: {fileID: 598751972}
   m_Layer: 0
   m_Name: amarillo ene
   m_TagString: Untagged
@@ -1743,37 +1623,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &598751972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598751967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd4ed27b648fe64468d283eff4ec1a19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allWaypoints:
-  - {fileID: 1619166337}
-  - {fileID: 842681773}
-  - {fileID: 923629687}
-  playerPrefab: {fileID: 1790900425}
-  pl: {fileID: 1790900426}
-  startingNode: {fileID: 0}
-  goalNode: {fileID: 0}
-  MaxSpeed: 2.34
-  viewRadius: 10
-  viewAngle: 75
-  _currentWay: 0
-  _movementSpeed: 4
-  Notify: 0
-  MaxForceRot: 5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  Player: {x: 0, y: 0, z: 0}
 --- !u!1 &647871774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,7 +2151,7 @@ GameObject:
   - component: {fileID: 842681775}
   m_Layer: 0
   m_Name: NODO AM (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2330,13 +2179,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 842681773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 923629689}
-  - {fileID: 1619166339}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &880513915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,7 +2292,7 @@ GameObject:
   - component: {fileID: 889030957}
   m_Layer: 0
   m_Name: Nodo Verde
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2473,13 +2320,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 889030955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 2079613439}
-  - {fileID: 1161496112}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &901431304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2337,7 @@ GameObject:
   - component: {fileID: 901431306}
   m_Layer: 0
   m_Name: NODO (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2520,13 +2365,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 901431304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1783629951}
-  - {fileID: 923629689}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &912401361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,7 +2382,7 @@ GameObject:
   - component: {fileID: 912401363}
   m_Layer: 0
   m_Name: NODO az (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2567,13 +2410,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 912401361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 238768575}
-  - {fileID: 1977763194}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &923629687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2427,7 @@ GameObject:
   - component: {fileID: 923629689}
   m_Layer: 0
   m_Name: NODO am
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2614,14 +2455,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 923629687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 901431306}
-  - {fileID: 842681775}
-  - {fileID: 1619166339}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,7 +2650,7 @@ GameObject:
   - component: {fileID: 1079788597}
   m_Layer: 0
   m_Name: nodo verde
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2840,13 +2678,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079788595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1488613243}
-  - {fileID: 2079613439}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1095521167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,7 +2790,7 @@ GameObject:
   - component: {fileID: 1161496112}
   m_Layer: 0
   m_Name: Nodo Verde (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2982,13 +2818,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1161496110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 2081039239}
-  - {fileID: 889030957}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1194530013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,7 +2916,7 @@ GameObject:
   - component: {fileID: 1224114788}
   m_Layer: 0
   m_Name: NODO rojo (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3095,7 +2929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224114786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.5, y: 2.01, z: 30.480001}
+  m_LocalPosition: {x: -42.5, y: 2.01, z: 31.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 715379395}
@@ -3110,13 +2944,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1224114786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1445777571}
-  - {fileID: 152015256}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1233725875
 GameObject:
   m_ObjectHideFlags: 0
@@ -3129,7 +2961,7 @@ GameObject:
   - component: {fileID: 1233725877}
   m_Layer: 0
   m_Name: NODO az y rojo (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3157,14 +2989,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233725875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1859320765}
-  - {fileID: 250738513}
-  - {fileID: 1445777571}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1249049236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3006,7 @@ GameObject:
   - component: {fileID: 1249049238}
   m_Layer: 0
   m_Name: NODO az y rojo
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3205,14 +3034,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1249049236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 318797863}
-  - {fileID: 2127745308}
-  - {fileID: 238768575}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1416185324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,7 +3146,7 @@ GameObject:
   - component: {fileID: 1445777571}
   m_Layer: 0
   m_Name: NODO rojo
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3348,14 +3174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445777569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1224114788}
-  - {fileID: 1233725877}
-  - {fileID: 247805190}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1485607723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,7 +3286,7 @@ GameObject:
   - component: {fileID: 1488613243}
   m_Layer: 0
   m_Name: Nodo Verde (3)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3491,13 +3314,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488613241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1079788597}
-  - {fileID: 149417394}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1603439399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,7 +3331,7 @@ GameObject:
   - component: {fileID: 1603439401}
   m_Layer: 0
   m_Name: NODO (14)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3538,13 +3359,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603439399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 2079613439}
-  - {fileID: 247805190}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1619166337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,7 +3376,7 @@ GameObject:
   - component: {fileID: 1619166339}
   m_Layer: 0
   m_Name: NODO AM
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3585,12 +3404,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1619166337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 842681775}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1639065042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,11 +3438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 954e9f3a234ad0a4eaa7de002a19960f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hunters:
-  - {fileID: 157370469}
-  - {fileID: 598751972}
-  - {fileID: 439691116}
-  - {fileID: 59468062}
   Player:
   - {fileID: 1790900426}
   wallLayer:
@@ -4037,7 +3850,7 @@ GameObject:
   - component: {fileID: 1783629951}
   m_Layer: 0
   m_Name: NODO az (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4065,14 +3878,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783629949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1977763194}
-  - {fileID: 901431306}
-  - {fileID: 250738513}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1784869381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4085,7 +3895,7 @@ GameObject:
   - component: {fileID: 1784869383}
   m_Layer: 0
   m_Name: Nodo Verde (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4113,13 +3923,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784869381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 149417394}
-  - {fileID: 2081039239}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1790900421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4355,7 +4163,7 @@ GameObject:
   - component: {fileID: 1859320765}
   m_Layer: 0
   m_Name: NODO az y rojo (4)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4383,14 +4191,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1859320763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 2127745308}
-  - {fileID: 318797863}
-  - {fileID: 1233725877}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1950183609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,7 +4340,7 @@ GameObject:
   - component: {fileID: 1977763194}
   m_Layer: 0
   m_Name: NODO az
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4563,13 +4368,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1977763192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 912401363}
-  - {fileID: 1783629951}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &1994709619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,7 +4480,7 @@ GameObject:
   - component: {fileID: 2079613439}
   m_Layer: 0
   m_Name: Nodo Verde
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4705,14 +4508,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079613437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 889030957}
-  - {fileID: 1079788597}
-  - {fileID: 1603439401}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &2081039237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,7 +4525,7 @@ GameObject:
   - component: {fileID: 2081039239}
   m_Layer: 0
   m_Name: Nodo Verde
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4753,13 +4553,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081039237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 1784869383}
-  - {fileID: 1161496112}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3
 --- !u!1 &2127745306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,7 +4570,7 @@ GameObject:
   - component: {fileID: 2127745308}
   m_Layer: 0
   m_Name: NODO az y rojo (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4800,11 +4598,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2127745306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7b9ed4f59fd25b48b5de264701e146d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ef1c946e86cea644a2fcbc0c2883433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _neighbors:
-  - {fileID: 152015256}
-  - {fileID: 1859320765}
-  - {fileID: 1249049238}
-  cost: 1
+  debugDranRadius: 1
+  _connectiviyRadius: 7.3

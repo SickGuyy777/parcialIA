@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public List<Waypoints> Hunters = new List<Waypoints>();
+    //public List<Waypoints> Hunters = new List<Waypoints>();
     public List<PlayerMovement> Player = new List<PlayerMovement>();
     public LayerMask wallLayer;
 
@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddHuntter(Waypoints Hunt)
-    {
-        if (!Hunters.Contains(Hunt))
-        {
-            Hunters.Add(Hunt);
-        }
-    }
+    //public void AddHuntter(Waypoints Hunt)
+    //{
+    //    if (!Hunters.Contains(Hunt))
+    //    {
+    //        Hunters.Add(Hunt);
+    //    }
+    //}
 
     public void AddPlayer(PlayerMovement Pl)
     {

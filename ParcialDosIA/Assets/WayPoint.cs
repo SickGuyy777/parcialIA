@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WayPoint : MonoBehaviour
+{
+    [SerializeField]
+    protected float debugDranRadius = 1.0f;
+    public virtual void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, debugDranRadius);
+    }
+
+
+}
